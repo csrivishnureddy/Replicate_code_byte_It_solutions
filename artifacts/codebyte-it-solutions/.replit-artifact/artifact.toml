@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "CodeByte IT Solutions"
+description = "A polished multi-page IT solutions company website for CodeByte IT Solutions, with dropdown navigation, service and industry pages, and editable contact details for future customization."
+version = "1.0.0"
+id = "artifacts/codebyte-it-solutions"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23719
+
+[services.development]
+run = "pnpm --filter @workspace/codebyte-it-solutions run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/codebyte-it-solutions", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/codebyte-it-solutions/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23719"
+BASE_PATH = "/"
