@@ -1,10 +1,13 @@
 export const contactInfo = {
-  email: "hello@codebyteitsolutions.com",
+  email: "info@codebyteitsolutions.com",
   sales: "sales@codebyteitsolutions.com",
   support: "support@codebyteitsolutions.com",
-  careers: "careers@codebyteitsolutions.com",
-  phone: "+1 (000) 555-0148",
-  office: "Office placeholder · North America / Remote",
+  careers: "hr@codebyteitsolutions.com",
+  phone: "+91 6364938194",
+  offices: [
+    "XMMV+6FG, B Narayanapura Flyover, Kamadhenu Nagar, Laxmi Sagar Layout, Mahadevapura, Bengaluru, Karnataka 560048",
+    "411057, INTERNATIONAL TECH PARK, Plot No. 18, MIDC Phase III Rd, Phase 3, Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057",
+  ],
 };
 
 export const services = [
