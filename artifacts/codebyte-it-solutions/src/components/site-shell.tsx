@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 import { ChevronDown, Menu, X, ArrowUpRight } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { contactInfo, industries, resourceLinks, services } from "@/data/site";
+import logoUrl from "@assets/codebyteitlogo-D92qVbta_1786784330534.png";
 
 type Group = { label: string; links: { title: string; path: string; description?: string }[] };
 
@@ -17,7 +18,7 @@ function isActive(path: string, current: string) {
 }
 
 export function Brand() {
-  return <Link href="/" className="brand" data-testid="link-brand"><span className="brand-mark">CB</span><span>CodeByte<span style={{ color: "hsl(var(--primary))" }}>.</span>IT Solutions</span></Link>;
+  return <Link href="/" className="brand" data-testid="link-brand"><img className="brand-logo" src={logoUrl} alt="CodeByte IT Solutions logo" /><span>CodeByte<span style={{ color: "hsl(var(--primary))" }}>.</span>IT Solutions</span></Link>;
 }
 
 export function Header() {
