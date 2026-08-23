@@ -11,11 +11,12 @@ export const contactInfo = {
 };
 
 export const services = [
-  { title: "Software development", path: "/services/software-development", description: "Products, platforms, and systems that stay useful after launch.", code: "01" },
-  { title: "Cloud & DevOps", path: "/services/cloud-devops", description: "A calmer, faster operating model for your infrastructure.", code: "02" },
+  { title: "Software development", path: "/services/software-development", description: "Java full stack, Node.js, and modern platforms — built to last beyond the first release.", code: "01" },
+  { title: "Cloud & DevOps", path: "/services/cloud-devops", description: "A calmer, faster operating model for your infrastructure — pipelines, IaC, and 24/7 reliability.", code: "02" },
   { title: "Cybersecurity", path: "/services/cybersecurity", description: "Risk decisions made clear, practical, and durable.", code: "03" },
   { title: "Managed IT", path: "/services/managed-it", description: "A responsive technical team for the work between the big projects.", code: "04" },
-  { title: "Data & applied AI", path: "/services/data-ai", description: "Turn scattered information into decisions your people can act on.", code: "05" },
+  { title: "Data engineering", path: "/services/data-ai", description: "Pipelines, warehouses, and decision intelligence — turn scattered data into reliable signals.", code: "05" },
+  { title: "SAP solutions", path: "/services/sap", description: "Implementation, migration, and support across SAP landscapes for growing enterprises.", code: "06" },
 ];
 
 export const industries = [
