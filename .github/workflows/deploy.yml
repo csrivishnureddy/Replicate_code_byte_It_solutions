@@ -35,8 +35,12 @@ jobs:
       - name: Build
         run: pnpm --filter @workspace/codebyte-it-solutions build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          BASE_PATH: /
           NODE_ENV: production
+
+      # Preserve custom domain across deployments
+      - name: Add CNAME
+        run: echo "codebyteitsolutions.com" > artifacts/codebyte-it-solutions/dist/public/CNAME
 
       # Enables client-side routing on GitHub Pages (serves index.html for all unknown paths)
       - name: Copy index.html to 404.html
