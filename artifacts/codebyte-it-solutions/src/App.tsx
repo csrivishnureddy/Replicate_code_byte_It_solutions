@@ -19,6 +19,7 @@ function Router() {
     <Route path="/services/cybersecurity"><ServiceDetailPage slug="cybersecurity" /></Route>
     <Route path="/services/managed-it"><ServiceDetailPage slug="managed-it" /></Route>
     <Route path="/services/data-ai"><ServiceDetailPage slug="data-ai" /></Route>
+    <Route path="/services/sap"><ServiceDetailPage slug="sap" /></Route>
     <Route path="/industries" component={IndustriesPage} />
     <Route path="/industries/healthcare"><IndustryDetailPage slug="healthcare" /></Route>
     <Route path="/industries/finance"><IndustryDetailPage slug="finance" /></Route>

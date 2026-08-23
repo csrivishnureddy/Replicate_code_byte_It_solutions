@@ -207,6 +207,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .success-box { padding: 28px; border: 1px solid hsl(var(--primary)); background: hsl(188 86% 91%); }
 .success-box h3 { margin: 10px 0 7px; font-size: 1.45rem; }
 
+/* AI-generated images */
+.hero-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .32; mix-blend-mode: luminosity; }
+.spec-card-img { display: block; width: calc(100% + 48px); margin: -28px -24px 20px -24px; height: 140px; object-fit: cover; }
+.case-visual-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .45; mix-blend-mode: luminosity; }
+.about-team-banner { width: 100%; overflow: hidden; line-height: 0; max-height: 480px; }
+.about-team-img { width: 100%; height: 440px; object-fit: cover; object-position: center 30%; display: block; }
+
 /* footer */
 .footer { background: hsl(221 47% 10%); color: hsl(210 30% 80%); padding: 72px 0 28px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 30px; padding-bottom: 65px; }
