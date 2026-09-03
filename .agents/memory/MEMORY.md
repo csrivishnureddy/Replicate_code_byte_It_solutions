@@ -1,0 +1,1 @@
+- [Playwright on Replit Nix](playwright-replit-nix.md) — Browser tests need an explicit Chromium install plus native runtime libraries in the project environment.
